@@ -4,7 +4,8 @@ import { storeCusineData, cuisineDataList } from './cuisineData.js'
 const getFoodByCuisine = async (event) => {
   const element = event.currentTarget
   const cuisine = element.dataset.cuisine
-  const recipes = await getRecipes(cuisine)
+  const recipeResponse = await getRecipes(cuisine)
+  const recipes = recipeResponse.hits
   storeCusineData(recipes)
   console.log('cuisineDataList', cuisineDataList)
 }
