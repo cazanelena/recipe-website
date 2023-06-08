@@ -93,3 +93,23 @@
     display: none;
   }
 }
+
+.homepage__logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+  z-index: 100;
+}
+@media only screen and (max-width: 600px) {
+  .homepage__logos {
+    margin-top: 4rem;
+  }
+}
+
+.homepage__logo {
+  width: 3rem;
+  height: auto;
+}
