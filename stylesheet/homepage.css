@@ -1,0 +1,13 @@
+.homepage {
+  position: absolute;
+  top: 0;
+  min-height: 100vh;
+}
+
+.homepage__image {
+  height: 20rem;
+  height: 100%;
+  width: 100vw;
+  min-height: 30rem;
+  object-fit: cover;
+}
