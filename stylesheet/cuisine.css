@@ -1,11 +1,12 @@
-.cuisine {
+.cuisine__h2 {
   margin-top: 6rem;
   text-align: center;
   letter-spacing: 0.05rem;
   font-weight: 400;
+  z-index: 100;
 }
 @media only screen and (max-width: 600px) {
-  .cuisine {
+  .cuisine__h2 {
     margin-top: 4rem;
   }
 }
@@ -69,6 +70,12 @@
   gap: 2rem;
   margin-top: 6rem;
   margin-bottom: 2rem;
+  z-index: 100;
+}
+@media only screen and (max-width: 600px) {
+  .homepage__logos {
+    margin-top: 4rem;
+  }
 }
 
 .homepage__logo {
