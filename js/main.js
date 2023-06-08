@@ -3,7 +3,9 @@ import {
   getRecipeById,
   getTwentyRandomRecipes,
 } from './apiRoutes.js'
+import { addCusineEventListeners } from './cusine/onCusineClick.js'
 
+addCusineEventListeners()
 // const getSpanish = await getRecipes('spanish')
 // console.log('getSpanish', getSpanish)
 

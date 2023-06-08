@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="/stylesheet/style.css" />
     <link rel="stylesheet" href="/stylesheet/nav.css" />
     <link rel="stylesheet" href="/stylesheet/homepage.css" />
+    <link rel="stylesheet" href="/stylesheet/cusine.css" />
     <title>Recipe website</title>
     <script type="module" src="/js/main.js"></script>
   </head>
@@ -29,50 +30,68 @@
     </nav>
 
     <section class="homepage">
-      <img src="./img/recipe_bg2.webp" alt="" class="homepage__image" />
+      <img src="./img/recipe_bg2.webp" alt="" class="homepage__bg" />
       <div class="homepage__content">
-        <h1 class="homepage__content-h1">
-          Click your favourite cusine or search below:
-        </h1>
+        <h1 class="homepage__content-h1">Search your favourite receipe?</h1>
 
         <div class="homepage__search-container">
           <img src="./img//search.svg" alt="" class="homepage__search-icon" />
           <input placeholder="Search Recipes" class="homepage__search" />
         </div>
 
-        <div class="homepage__image-flexbox">
-          <div class="homepage__image-container">
-            <p class="homepage__image-text">SPANISH</p>
+        <h2 class="cusine__h2">or choose your favourite cusine?</h2>
+
+        <div class="cusine__flexbox">
+          <div class="cusine__container" data-cuisine="spanish">
+            <p class="cusine__text">SPANISH</p>
             <img
               src="./img/food_spanish.webp"
               alt="Spanish paella"
-              class="homepage__images"
+              class="cusine__image"
             />
           </div>
-          <div class="homepage__image-container">
-            <p class="homepage__image-text">ITALIAN</p>
+          <div class="cusine__container" data-cuisine="italian">
+            <p class="cusine__text">ITALIAN</p>
             <img
               src="./img/food_italian.webp"
               alt="Italian pizza"
-              class="homepage__images"
+              class="cusine__image"
             />
           </div>
-          <div class="homepage__image-container">
-            <p class="homepage__image-text">INDIAN</p>
+          <div class="cusine__container" data-cuisine="indian">
+            <p class="cusine__text">INDIAN</p>
             <img
               src="./img/food_indian.webp"
               alt="Indian curry"
-              class="homepage__images"
+              class="cusine__image"
             />
           </div>
-          <div class="homepage__image-container">
-            <p class="homepage__image-text">FRENCH</p>
+          <div class="cusine__container" data-cuisine="french">
+            <p class="cusine__text">FRENCH</p>
             <img
               src="./img/food_french.webp"
               alt="Spanish paella"
-              class="homepage__images"
+              class="cusine__image"
             />
           </div>
+        </div>
+
+        <div class="homepage__logos">
+          <img
+            src="./img/facebook.svg"
+            alt="Facebook logo"
+            class="homepage__logo"
+          />
+          <img
+            src="./img/insta.svg"
+            alt="Facebook logo"
+            class="homepage__logo"
+          />
+          <img
+            src="./img/twitter.svg"
+            alt="Facebook logo"
+            class="homepage__logo"
+          />
         </div>
       </div>
     </section>
