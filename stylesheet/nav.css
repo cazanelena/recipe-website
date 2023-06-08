@@ -12,8 +12,8 @@
 
 .nav__opacity-bg {
   position: absolute;
-  opacity: 0.2;
-  background: grey;
+  opacity: 1;
+  background: var(--quad-grey);
   width: 100%;
   height: 100%;
   z-index: 30;
