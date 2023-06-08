@@ -1,16 +1,16 @@
-.cusine__h2 {
+.cuisine {
   margin-top: 6rem;
   text-align: center;
   letter-spacing: 0.05rem;
   font-weight: 400;
 }
 @media only screen and (max-width: 600px) {
-  .cusine__h2 {
+  .cuisine {
     margin-top: 4rem;
   }
 }
 
-.cusine__flexbox {
+.cuisine__flexbox {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,16 +21,16 @@
   margin-right: 0.5rem;
 }
 @media only screen and (max-width: 600px) {
-  .cusine__flexbox {
+  .cuisine__flexbox {
     margin-top: 2rem;
   }
 }
 
-.cusine__container {
+.cuisine__container {
   position: relative;
 }
 
-.cusine__text {
+.cuisine__text {
   position: absolute;
   z-index: 20;
   top: 50%;
@@ -45,19 +45,19 @@
   padding: 0.5rem;
 }
 @media only screen and (max-width: 600px) {
-  .cusine__text {
+  .cuisine__text {
     font-size: 0.8rem;
   }
 }
 
-.cusine__image {
+.cuisine__image {
   clip-path: circle();
   width: 10rem;
   height: auto;
   object-fit: cover;
 }
 @media only screen and (max-width: 600px) {
-  .cusine__image {
+  .cuisine__image {
     width: 7rem;
   }
 }
