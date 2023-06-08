@@ -1,5 +1,20 @@
 *,
 *::before,
 *::after {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+  justify-content: center;
+}
+
+.box-flex {
+  width: 200px;
+}
+.img-recipe {
+  width: 100%;
+  height: auto;
 }

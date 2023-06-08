@@ -40,7 +40,13 @@ const createDiv = (image, label) => {
   labelText.innerHTML = label;
 
   containerRandomSection.appendChild(imgDiv)
-  containerRandomSection.appendChild(labelDiv)
+  imgDiv.appendChild(imgRecipe)
+  imgDiv.appendChild(labelDiv)
+
+  // Adding CSS Classes
+  imgDiv.classList.add('box-flex')
+  imgRecipe.classList.add('img-recipe')
+  containerRandomSection.classList.add('flex-container')
 
 }
 
@@ -48,3 +54,7 @@ imageRandomRecipes.forEach((image, index) => {
   const label = labelRandomRecipes[index];
   createDiv(image, label);
 });
+
+
+
+
