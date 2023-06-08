@@ -1,10 +1,12 @@
 .nav {
-  position: relative;
+  position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100vw;
+  height: 5rem;
   z-index: 20;
+  min-width: 320px;
 }
 
 .nav__opacity-bg {
@@ -18,4 +20,10 @@
 
 .nav__full-opacity {
   z-index: 40;
+  opacity: 1;
+}
+
+.nav__logo {
+  height: 4.5rem;
+  opacity: 1;
 }

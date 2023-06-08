@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Roboto:wght@400;700;900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/stylesheet/style.css" />
@@ -18,7 +18,7 @@
   </head>
   <body>
     <nav class="nav">
-      <div class="nav__opacity-bg"></div>
+      <!-- <div class="nav__opacity-bg"></div> -->
       <div class="nav__full-opacity">
         <img
           src="./img/i_like_eat_logo.svg"
@@ -27,8 +27,54 @@
         />
       </div>
     </nav>
+
     <section class="homepage">
-      <img src="./img/recipe_bg.webp" alt="" class="homepage__image" />
+      <img src="./img/recipe_bg2.webp" alt="" class="homepage__image" />
+      <div class="homepage__content">
+        <h1 class="homepage__content-h1">
+          Click your favourite cusine or search below:
+        </h1>
+
+        <div class="homepage__search-container">
+          <img src="./img//search.svg" alt="" class="homepage__search-icon" />
+          <input placeholder="Search Recipes" class="homepage__search" />
+        </div>
+
+        <div class="homepage__image-flexbox">
+          <div class="homepage__image-container">
+            <p class="homepage__image-text">SPANISH</p>
+            <img
+              src="./img/food_spanish.webp"
+              alt="Spanish paella"
+              class="homepage__images"
+            />
+          </div>
+          <div class="homepage__image-container">
+            <p class="homepage__image-text">ITALIAN</p>
+            <img
+              src="./img/food_italian.webp"
+              alt="Italian pizza"
+              class="homepage__images"
+            />
+          </div>
+          <div class="homepage__image-container">
+            <p class="homepage__image-text">INDIAN</p>
+            <img
+              src="./img/food_indian.webp"
+              alt="Indian curry"
+              class="homepage__images"
+            />
+          </div>
+          <div class="homepage__image-container">
+            <p class="homepage__image-text">FRENCH</p>
+            <img
+              src="./img/food_french.webp"
+              alt="Spanish paella"
+              class="homepage__images"
+            />
+          </div>
+        </div>
+      </div>
     </section>
   </body>
 </html>

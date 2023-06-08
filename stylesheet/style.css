@@ -1,5 +1,5 @@
 :root {
-  --primary-red: #ff4070;
+  --primary-red: #d31e52;
   --secondary-grey: #424750;
   --tertiary-white: #ffffff;
 }
@@ -10,6 +10,15 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'PT Sans', sans-serif;
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
   /* border: 1px solid blue; */
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: unset;
+  text-decoration: none;
 }
