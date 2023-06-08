@@ -1,10 +1,12 @@
 import { getRecipes } from '../apiRoutes.js'
+import { storeCusineData, cuisineDataList } from './cuisineData.js'
 
 const getFoodByCuisine = async (event) => {
   const element = event.currentTarget
   const cuisine = element.dataset.cuisine
   const recipes = await getRecipes(cuisine)
-  console.log('recipes', recipes)
+  storeCusineData(recipes)
+  console.log('cuisineDataList', cuisineDataList)
 }
 
 const cuisineElements = document.querySelectorAll('[data-cuisine]')
