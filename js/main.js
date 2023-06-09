@@ -33,7 +33,7 @@ const urlRecipes = twentyRandomRecipes.hits.map(hit => hit.recipe.url)
 
 const containerRandomSection = document.querySelector(".container");
 
-const createDiv = (image, label, url) => {
+const createRandomRecipes = (image, label, url) => {
   const boxDiv = document.createElement("div");
 
   const imgRecipe = document.createElement("img");
@@ -72,6 +72,6 @@ const createDiv = (image, label, url) => {
 imageRandomRecipes.forEach((image, index) => {
   let label = labelRandomRecipes[index];
   let eachUrlRecipe = urlRecipes[index]
-  createDiv(image, label, eachUrlRecipe);
+  createRandomRecipes(image, label, eachUrlRecipe);
 });
 
