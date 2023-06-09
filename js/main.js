@@ -39,16 +39,20 @@ const createDiv = (image, label) => {
 
   const labelDiv = document.createElement("div");
   const labelText = document.createElement("p");
+  const btnViewRecipe = document.createElement('button')
+  btnViewRecipe.innerHTML = 'View Recipe'
   labelDiv.appendChild(labelText);
   labelText.innerHTML = label;
 
   containerRandomSection.appendChild(imgDiv);
   imgDiv.appendChild(imgRecipe);
   imgDiv.appendChild(labelDiv);
+  labelDiv.appendChild(btnViewRecipe)
 
   // Adding CSS Classes
   imgDiv.classList.add("box-flex");
   imgRecipe.classList.add("img-recipe");
+  labelDiv.classList.add('info-label')
 };
 
 imageRandomRecipes.forEach((image, index) => {
