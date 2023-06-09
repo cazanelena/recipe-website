@@ -21,46 +21,57 @@ console.log("twentyRandomRecipes", twentyRandomRecipes);
 const labelRandomRecipes = twentyRandomRecipes.hits.map(
   (hit) => hit.recipe.label
 );
-console.log(labelRandomRecipes);
 
+//Get the image for each recipe
 const imageRandomRecipes = twentyRandomRecipes.hits.map(
   (hit) => hit.recipe.image
 );
-console.log(imageRandomRecipes);
+
+//Get the url for each recipe
+const urlRecipes = twentyRandomRecipes.hits.map(hit => hit.recipe.url)
+
 
 const containerRandomSection = document.querySelector(".container");
 
-const createDiv = (image, label) => {
-  const imgDiv = document.createElement("div");
+const createDiv = (image, label, url) => {
+  const boxDiv = document.createElement("div");
 
   const imgRecipe = document.createElement("img");
-  imgDiv.appendChild(imgRecipe);
+  boxDiv.appendChild(imgRecipe);
   imgRecipe.src = image;
 
   const labelDiv = document.createElement("div");
   const labelText = document.createElement("p");
-  const btnViewRecipe = document.createElement('button')
-  btnViewRecipe.innerHTML = 'View Recipe'
+
+  //Create a btn to view info about recipe
+  const btnViewRecipe = document.createElement('button');
+  
+  //Add a link to the btn
+  const link = document.createElement('a')
+  link.classList.add('link-recipe')
+  btnViewRecipe.setAttribute('class', 'view-recipe-btn');
+  btnViewRecipe.appendChild(link);
+  link.href = url;
+  link.target = '_blank'
+  link.textContent = 'View Recipe'
+
   labelDiv.appendChild(labelText);
   labelText.innerHTML = label;
 
-  containerRandomSection.appendChild(imgDiv);
-  imgDiv.appendChild(imgRecipe);
-  imgDiv.appendChild(labelDiv);
+  containerRandomSection.appendChild(boxDiv);
+  boxDiv.appendChild(imgRecipe);
+  boxDiv.appendChild(labelDiv);
   labelDiv.appendChild(btnViewRecipe)
 
   // Adding CSS Classes
-  imgDiv.classList.add("box-flex");
+  boxDiv.classList.add("box-flex");
   imgRecipe.classList.add("img-recipe");
   labelDiv.classList.add('info-label')
 };
 
 imageRandomRecipes.forEach((image, index) => {
-  const label = labelRandomRecipes[index];
-  createDiv(image, label);
+  let label = labelRandomRecipes[index];
+  let eachUrlRecipe = urlRecipes[index]
+  createDiv(image, label, eachUrlRecipe);
 });
 
-imageRandomRecipes.forEach((image, index) => {
-  const label = labelRandomRecipes[index];
-  createDiv(image, label);
-});
