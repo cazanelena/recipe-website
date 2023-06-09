@@ -1,5 +1,9 @@
 import { createElement } from '../utils/createElement.js'
-import { cuisineDataList } from '../cusine/cuisineData.js'
+import { cuisineDataList, storeCusineData } from '../cusine/cuisineData.js'
+
+const serachResultsFromSessionStorage = sessionStorage.getItem('recipes')
+const serachResults = JSON.parse(serachResultsFromSessionStorage)
+storeCusineData(serachResults)
 
 const getDifficulty = (totalTime) => {
   if (totalTime > 90) return 5
@@ -10,7 +14,7 @@ const getDifficulty = (totalTime) => {
 }
 
 const createSearchResultsDom = (recipeSearchResults) => {
-  const recipeArray = recipeSearchResults[0]
+  const recipeArray = recipeSearchResults
 
   recipeArray.forEach((recipe) => {
     const recipeDetails = recipe.recipe
@@ -39,7 +43,7 @@ const createSearchResultsDom = (recipeSearchResults) => {
     })
 
     const stars = new Array(difficulty).fill('star')
-    
+
     for (let i = 0; i < stars.length; i++) {
       const starElement = createElement('img', {
         class: 'recipe__star',
@@ -64,7 +68,6 @@ const createSearchResultsDom = (recipeSearchResults) => {
 
     const recipesSection = document.querySelector('#recipes')
     recipesSection.appendChild(recipeContainer)
-    console.log('recipesSection', recipesSection)
   })
 }
 

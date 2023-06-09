@@ -6,8 +6,9 @@ const getFoodByCuisine = async (event) => {
   const cuisine = element.dataset.cuisine
   const recipeResponse = await getRecipes(cuisine)
   const recipes = recipeResponse.hits
-  storeCusineData(recipes)
-  console.log('cuisineDataList', cuisineDataList)
+
+  sessionStorage.setItem('recipes', JSON.stringify(recipes))
+  window.location.href = './search-results.html'
 }
 
 const cuisineElements = document.querySelectorAll('[data-cuisine]')
