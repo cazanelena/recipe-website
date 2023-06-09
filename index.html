@@ -1,13 +1,101 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="I Like Eat" content="Serach your favourite recipes" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/stylesheet/style.css" />
+    <link rel="stylesheet" href="/stylesheet/nav.css" />
+    <link rel="stylesheet" href="/stylesheet/homepage.css" />
+    <link rel="stylesheet" href="/stylesheet/cuisine.css" />
     <title>Recipe website</title>
+    <script type="module" src="/js/main.js"></script>
   </head>
   <body>
-    <script type="module" src="/js/main.js"></script>
+    <nav class="nav">
+      <div class="nav__opacity-bg"></div>
+      <div class="nav__full-opacity">
+        <img
+          src="./img/i_like_eat_logo.svg"
+          alt="I lik eat logo"
+          class="nav__logo"
+        />
+      </div>
+    </nav>
+
+    <section class="homepage">
+      <img src="./img/recipe_bg2.webp" alt="" class="homepage__bg" />
+      <div class="homepage__content">
+        <h1 class="homepage__content-h1">Search your favourite receipe?</h1>
+
+        <div class="homepage__search-container">
+          <img src="./img//search.svg" alt="" class="homepage__search-icon" />
+          <input placeholder="Search Recipes" class="homepage__search" />
+        </div>
+
+        <h2 class="cuisine__h2">or choose your favourite cusine?</h2>
+
+        <div class="cuisine__flexbox">
+          <div class="cuisine__container" data-cuisine="spanish">
+            <p class="cuisine__text">SPANISH</p>
+            <img
+              src="./img/food_spanish.webp"
+              alt="Spanish paella"
+              class="cuisine__image"
+            />
+          </div>
+          <div class="cuisine__container" data-cuisine="italian">
+            <p class="cuisine__text">ITALIAN</p>
+            <img
+              src="./img/food_italian.webp"
+              alt="Italian pizza"
+              class="cuisine__image"
+            />
+          </div>
+          <div class="cuisine__container" data-cuisine="indian">
+            <p class="cuisine__text">INDIAN</p>
+            <img
+              src="./img/food_indian.webp"
+              alt="Indian curry"
+              class="cuisine__image"
+            />
+          </div>
+          <div class="cuisine__container" data-cuisine="french">
+            <p class="cuisine__text">FRENCH</p>
+            <img
+              src="./img/food_french.webp"
+              alt="Spanish paella"
+              class="cuisine__image"
+            />
+          </div>
+        </div>
+
+
+        <div class="homepage__logos">
+          <img
+            src="./img/facebook.svg"
+            alt="Facebook logo"
+            class="homepage__logo"
+          />
+          <img
+            src="./img/insta.svg"
+            alt="Facebook logo"
+            class="homepage__logo"
+          />
+          <img
+            src="./img/twitter.svg"
+            alt="Facebook logo"
+            class="homepage__logo"
+          />
+        </div>
+      </div>
 
 
     <section>
@@ -15,6 +103,7 @@
         <div class="container">
 
         </div>
+
     </section>
   </body>
 </html>

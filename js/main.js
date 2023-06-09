@@ -2,7 +2,26 @@ import {
   getRecipes,
   getRecipeById,
   getTwentyRandomRecipes,
-} from "./apiRoutes.js";
+  } from "./apiRoutes.js";
+
+import { addCuisineEventListeners } from './cusine/onCuisineClick.js'
+
+addCuisineEventListeners()
+// const getSpanish = await getRecipes('spanish')
+// console.log('getSpanish', getSpanish)
+
+// const singleRecipe = getSpanish.hits[0].recipe.uri.split('_')[1]
+// console.log('singleRecipe', singleRecipe)
+
+// const recipeById = await getRecipeById(singleRecipe)
+// console.log('recipeById', recipeById)
+
+// const twentyRandomRecipes = await getTwentyRandomRecipes()
+// console.log('twentyRandomRecipes', twentyRandomRecipes)
+
+// console.log('working')
+
+
 
 const getSpanish = await getRecipes("spanish");
 console.log("getSpanish", getSpanish);
@@ -74,4 +93,5 @@ imageRandomRecipes.forEach((image, index) => {
   let eachUrlRecipe = urlRecipes[index]
   createRandomRecipes(image, label, eachUrlRecipe);
 });
+
 

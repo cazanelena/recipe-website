@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="I Like Eat" content="Serach your favourite recipes" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Roboto:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/stylesheet/style.css" />
+    <link rel="stylesheet" href="/stylesheet/nav.css" />
+    <link rel="stylesheet" href="/stylesheet/homepage.css" />
+    <link rel="stylesheet" href="/stylesheet/search_home.css" />
+    <link rel="stylesheet" href="/stylesheet/search_recipes.css" />
+
+    <title>Recipe website</title>
+    <script
+      type="module"
+      src="/js/searchResults/createSearchResults.js"
+    ></script>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav__opacity-bg"></div>
+      <div class="nav__full-opacity">
+        <img
+          src="./img/i_like_eat_logo.svg"
+          alt="I lik eat logo"
+          class="nav__logo"
+        />
+      </div>
+    </nav>
+
+    <section class="search">
+      <div class="search__container">
+        <img src="./img//search.svg" alt="" class="search__icon" />
+        <input placeholder="Search Recipes" class="search__input" />
+      </div>
+    </section>
+
+    <section class="recipes__container">
+      <div class="recipes" id="recipes"></div>
+    </section>
+  </body>
+</html>

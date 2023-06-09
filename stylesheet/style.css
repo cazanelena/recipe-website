@@ -1,7 +1,28 @@
+:root {
+  --primary-red: #d31e52;
+  --secondary-grey: #424750;
+  --tertiary-white: #ffffff;
+  --quad-grey: #eeeeee;
+}
+
 *,
 *::before,
 *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
   /* border: 1px solid blue; */
+}
+
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: unset;
+  text-decoration: none;
 }
 
 .container {
@@ -31,3 +52,4 @@
 .link-recipe {
   text-decoration: none;
 }
+

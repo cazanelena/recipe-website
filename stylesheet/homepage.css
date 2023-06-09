@@ -1,0 +1,115 @@
+.homepage {
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+  min-width: 320px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.homepage__bg {
+  position: absolute;
+  width: 100vw;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+@media only screen and (max-width: 600px) {
+  .homepage__bg {
+    width: unset;
+  }
+}
+
+.homepage__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+  margin-top: 3rem;
+  z-index: 200;
+}
+@media only screen and (max-width: 600px) {
+  .homepage__content {
+    margin-top: 2rem;
+  }
+}
+
+.homepage__content-h1 {
+  margin-bottom: 2rem;
+  text-align: center;
+  letter-spacing: 0.05rem;
+  font-weight: 400;
+  z-index: 100;
+}
+
+.homepage__search-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (max-width: 600px) {
+  .homepage__search-container {
+    width: 100%;
+  }
+}
+
+.homepage__search {
+  background-color: var(--tertiary-white);
+  color: black;
+  border-radius: 3rem;
+  border: none;
+  outline: none;
+  padding: 1rem;
+  padding-left: 4rem;
+  font-size: 1.2rem;
+  width: 35rem;
+  border: 2px solid transparent;
+}
+.homepage__search:focus {
+  border: 2px solid grey;
+}
+@media only screen and (max-width: 600px) {
+  .homepage__search {
+    width: 100%;
+    padding: 0.5rem;
+    padding-left: 0rem;
+    text-align: center;
+  }
+}
+
+.homepage__search-icon {
+  position: absolute;
+  width: 2rem;
+  height: auto;
+  top: 50%;
+  left: 1rem;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+@media only screen and (max-width: 600px) {
+  .homepage__search-icon {
+    display: none;
+  }
+}
+
+.homepage__logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+  z-index: 100;
+}
+@media only screen and (max-width: 600px) {
+  .homepage__logos {
+    margin-top: 4rem;
+  }
+}
+
+.homepage__logo {
+  width: 3rem;
+  height: auto;
+}
