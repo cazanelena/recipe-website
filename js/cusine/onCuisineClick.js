@@ -1,5 +1,4 @@
 import { getRecipes } from '../apiRoutes.js'
-import { storeCusineData, cuisineDataList } from './cuisineData.js'
 
 const getFoodByCuisine = async (event) => {
   const element = event.currentTarget
