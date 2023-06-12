@@ -49,10 +49,15 @@ const imageRandomRecipes = twentyRandomRecipes.hits.map(
 //Get the url for each recipe
 const urlRecipes = twentyRandomRecipes.hits.map(hit => hit.recipe.url)
 
+//Get the health labels for each recipe
+
+const healthLabels = twentyRandomRecipes.hits.map(hit => hit.recipe.healthLabels[0])
+console.log(healthLabels)
+
 
 const containerRandomSection = document.querySelector(".container");
 
-const createRandomRecipes = (image, label, url) => {
+const createRandomRecipes = (image, label, healthL, url) => {
   const boxDiv = document.createElement("div");
 
   const imgRecipe = document.createElement("img");
@@ -61,6 +66,7 @@ const createRandomRecipes = (image, label, url) => {
 
   const labelDiv = document.createElement("div");
   const labelText = document.createElement("p");
+  const healthLabel = document.createElement("p");
 
   //Create a btn to view info about recipe
   const btnViewRecipe = document.createElement('button');
@@ -77,6 +83,9 @@ const createRandomRecipes = (image, label, url) => {
   labelDiv.appendChild(labelText);
   labelText.innerHTML = label;
 
+  labelDiv.appendChild(healthLabel)
+  healthLabel.innerHTML = healthL;
+
   containerRandomSection.appendChild(boxDiv);
   boxDiv.appendChild(imgRecipe);
   boxDiv.appendChild(labelDiv);
@@ -86,12 +95,15 @@ const createRandomRecipes = (image, label, url) => {
   boxDiv.classList.add("box-flex");
   imgRecipe.classList.add("img-recipe");
   labelDiv.classList.add('info-label')
+  healthLabel.classList.add('health-label')
 };
 
 imageRandomRecipes.forEach((image, index) => {
   let label = labelRandomRecipes[index];
-  let eachUrlRecipe = urlRecipes[index]
-  createRandomRecipes(image, label, eachUrlRecipe);
+  let healthTextLable = healthLabels[index]
+  let eachUrlRecipe = urlRecipes[index];
+  
+  createRandomRecipes(image, label, healthTextLable, eachUrlRecipe);
 });
 
 

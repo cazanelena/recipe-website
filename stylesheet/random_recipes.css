@@ -40,6 +40,10 @@
     margin-top: 5px;
     margin-bottom: 15px;
 }
+
+.health-label {
+    color: var(--secondary-grey);
+}
   /* TODO */
   
   /* .view-recipe-btn {
