@@ -1,7 +1,9 @@
 
 .random-section {
-    max-width: 70%;
+    max-width: 80%;
     z-index: inherit;
+    margin-left: auto;
+    margin-right: auto;
 }
 .container {
     display: flex;
@@ -24,9 +26,12 @@
 
   .random-title {
     z-index: inherit;
-    margin-top: 10rem;
+    margin-top: 5rem;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 2rem;
     font-size: 2rem;
+    text-align: center;
   }
 
   .info-lable {
