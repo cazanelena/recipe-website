@@ -43,12 +43,18 @@
 
 .health-label {
     color: var(--secondary-grey);
+    font-size: 10px;
 }
-  /* TODO */
-  
-  /* .view-recipe-btn {
-  
-  } */
+ .view-recipe-btn {
+    padding: 5px;
+    cursor: pointer;
+    border: 2px solid var(--secondary-grey);
+}
+
+.view-recipe-btn:hover {
+    background-color: var(--secondary-grey);
+    color: var(--tertiary-white);
+}
   
   
   
