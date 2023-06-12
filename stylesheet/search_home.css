@@ -2,18 +2,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .search__container {
   position: relative;
   display: flex;
   justify-content: center;
+  flex-direction: column;
   margin-top: 2rem;
   margin-bottom: 3rem;
+  max-width: 1400px;
 }
 @media only screen and (max-width: 600px) {
   .search__container {
-    width: 100%;
+    width: 90%;
   }
 }
 
@@ -52,4 +55,10 @@
     padding-left: 0rem;
     text-align: center;
   }
+}
+
+.search__term {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 2rem;
 }
