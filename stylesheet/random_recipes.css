@@ -15,6 +15,7 @@
   
   .box-flex {
     width: 200px;
+    border-radius: 5px;
   }
   .img-recipe {
     width: 100%;
@@ -23,11 +24,22 @@
 
   .random-title {
     z-index: inherit;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-    font-size: 3rem;
+    margin-top: 10rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
   }
-  
+
+  .info-lable {
+    display: inline-block;
+    max-width: 100%;
+    
+  }
+
+.info-label p {
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
   /* TODO */
   
   /* .view-recipe-btn {
