@@ -29,8 +29,9 @@
 }
 @media only screen and (max-width: 600px) {
   .box-flex {
-    width: 90vw;
-    min-width: 300px;
+    position: relative;
+    width: 80vw;
+    min-width: 280px;
     height: fit-content;
   }
 }
