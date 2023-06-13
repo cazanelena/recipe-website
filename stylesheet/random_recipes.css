@@ -8,13 +8,15 @@
 .random-title-recipes {
   color: var(--primary-red);
   text-align: center;
-  font-size: 2rem;
+  font-size: 3rem;
   margin-top: 3rem;
 }
 
 .random-title {
+  position: relative;
+  top: -0.8rem;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.78rem;
   margin-bottom: 1.4rem;
 }
 
