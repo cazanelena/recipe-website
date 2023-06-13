@@ -6,7 +6,8 @@ export const renderRecipes = (recipes) => {
     const image = recipe.recipe.image
     const healthLabel = recipe.recipe.healthLabels[0]
     const eachUrlRecipe = recipe.recipe.url
+    const totalTime = recipe.recipe.totalTime
 
-    createRecipes(image, label, healthLabel, eachUrlRecipe)
+    createRecipes(image, label, healthLabel, eachUrlRecipe, totalTime)
   })
 }
