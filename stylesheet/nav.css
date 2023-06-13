@@ -9,6 +9,11 @@
   z-index: 20;
   min-width: 320px;
 }
+@media only screen and (max-width: 600px) {
+  .nav {
+    height: 4rem;
+  }
+}
 
 .nav__opacity-bg {
   position: absolute;
@@ -25,6 +30,11 @@
 }
 
 .nav__logo {
-  height: 4.5rem;
+  height: 4rem;
   opacity: 1;
+}
+@media only screen and (max-width: 600px) {
+  .nav__logo {
+    height: 3rem;
+  }
 }
