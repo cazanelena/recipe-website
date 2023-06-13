@@ -44,7 +44,7 @@
 @media only screen and (max-width: 600px) {
   .img-recipe {
     object-fit: cover;
-    height: 10rem;
+    height: 15rem;
   }
 }
 
