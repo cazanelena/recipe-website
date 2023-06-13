@@ -1,12 +1,8 @@
-import { getRecipes } from '../apiRoutes.js'
-
 const getFoodByCuisine = async (event) => {
   const element = event.currentTarget
   const cuisine = element.dataset.cuisine
-  const recipeResponse = await getRecipes(cuisine)
-  const recipes = recipeResponse.hits
 
-  sessionStorage.setItem('recipes', JSON.stringify(recipes))
+  sessionStorage.setItem('searchTerm', JSON.stringify(cuisine))
   window.location.href = './search-results.html'
 }
 
