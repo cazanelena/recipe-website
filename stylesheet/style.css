@@ -1,6 +1,6 @@
 :root {
   --primary-red: #d31e52;
-  --secondary-grey: #424750;
+  --secondary-grey: #7c8390;
   --tertiary-white: #ffffff;
   --quad-grey: #eeeeee;
 }
@@ -13,7 +13,7 @@
   padding: 0;
   overflow-x: hidden;
   font-family: 'Roboto', sans-serif;
-  /* border: 1px solid blue; */
+  /* border: 1px solid green; */
 }
 
 a:link,

@@ -45,36 +45,97 @@
 }
 
 .box-flex {
+  position: relative;
   width: 200px;
+  height: fit-content;
   border-radius: 5px;
+  display: flex;
+  flex-direction: column;
 }
+@media only screen and (max-width: 600px) {
+  .box-flex {
+    position: relative;
+    width: 80vw;
+    min-width: 280px;
+    height: fit-content;
+  }
+}
+
 .img-recipe {
   width: 100%;
   height: auto;
+  border-radius: 8px;
+}
+@media only screen and (max-width: 600px) {
+  .img-recipe {
+    object-fit: cover;
+    height: 15rem;
+  }
 }
 
-.info-lable {
-  display: inline-block;
-  max-width: 100%;
+.random-title {
+  z-index: inherit;
+  margin-top: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  text-align: center;
 }
 
-.info-label p {
+.info-label {
+  position: relative;
+  margin-bottom: 20px;
+  width: 200px;
+  color: black;
+}
+@media only screen and (max-width: 600px) {
+  .info-label {
+    width: 100%;
+  }
+
+.label-text {
+  width: 75%;
   font-size: 15px;
+  font-weight: 400;
   margin-top: 5px;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 
 .health-label {
+  font-size: 12px;
   color: var(--secondary-grey);
-  font-size: 10px;
 }
+
+.button-div {
+  width: 100%;
+  height: 100%;
+  border: 2px solid green;
+}
+
 .view-recipe-btn {
+  width: 100%;
   padding: 5px;
   cursor: pointer;
-  border: 2px solid var(--secondary-grey);
+  border-radius: 5px;
+  background-color: transparent;
+  border: 2px solid var(--primary-red);
 }
 
 .view-recipe-btn:hover {
   background-color: var(--secondary-grey);
   color: var(--tertiary-white);
+}
+
+.lemon-img {
+  position: absolute;
+  right: 0px;
+  top: 5px;
+  width: 40px;
+}
+
+.star-img {
+  margin-top: 10px;
+  width: 1.25rem;
+  height: auto;
 }
