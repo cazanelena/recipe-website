@@ -1,5 +1,5 @@
 .random-section {
-  max-width: 90%;
+  width: fit-content;
   z-index: inherit;
   margin-left: auto;
   margin-right: auto;
