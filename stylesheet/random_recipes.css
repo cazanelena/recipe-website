@@ -30,6 +30,11 @@
   z-index: inherit;
   max-width: 1400px;
 }
+@media only screen and (max-width: 600px) {
+  .container {
+    margin: 0;
+  }
+}
 
 .box-flex {
   position: relative;
