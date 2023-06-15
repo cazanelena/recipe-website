@@ -70,11 +70,14 @@
 
 .search-btn {
   width: fit-content;
-  padding: 15px;
-  font-size: 17px;
+  padding: 10px;
+  font-size: 15px;
   margin-left: 20px;
   border-radius: 5px;
   cursor: pointer;
+  width: fit-content;
+  
+
 }
 .search-btn:hover {
   border: 1px solid;
@@ -86,7 +89,7 @@
 }
 @media only screen and (max-width: 600px) {
   .homepage__search {
-    width: 100%;
+    width: 80%;
     padding: 0.5rem;
     padding-left: 0rem;
     text-align: center;
