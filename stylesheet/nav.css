@@ -27,6 +27,7 @@
 .nav__full-opacity {
   z-index: 40;
   opacity: 1;
+  cursor: pointer;
 }
 
 .nav__logo {
