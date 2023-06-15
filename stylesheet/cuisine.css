@@ -30,6 +30,13 @@
 
 .cuisine__container {
   position: relative;
+  border: none;
+  outline: none;
+  background: transparent;
+  border: 3px solid transparent;
+}
+.cuisine__container:focus-visible {
+  border: 3px solid grey;
 }
 
 .cuisine__text {

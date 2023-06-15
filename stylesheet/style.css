@@ -3,7 +3,7 @@
   --secondary-grey: #7c8390;
   --tertiary-white: #ffffff;
   --quad-grey: #eeeeee;
-  --primary-black : black;
+  --primary-black: black;
 }
 
 *,
@@ -23,4 +23,9 @@ a:hover,
 a:active {
   color: unset;
   text-decoration: none;
+}
+
+*:focus-visible {
+  border: 3px solid grey;
+  outline: none;
 }
