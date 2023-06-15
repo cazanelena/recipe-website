@@ -123,3 +123,16 @@
   width: 1.25rem;
   height: auto;
 }
+
+.random__loading-spinner {
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.random__error-text {
+  display: none;
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 2rem;
+}
