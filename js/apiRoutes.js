@@ -6,8 +6,8 @@ let loading = false
 const loadingSpinner = document.getElementById('random__loading-spinner')
 const errorText = document.getElementById('random__error-text')
 
-const toogleLoadingSpinner = () => {
-  loading = !loading
+const toogleLoadingSpinner = (loadingState) => {
+  loading = loadingState
   if (loading) {
     errorText.style.display = 'none'
     loadingSpinner.style.display = 'flex'
@@ -24,13 +24,13 @@ const onApiError = () => {
 
 export const getRecipes = async (searchTerm) => {
   try {
-    toogleLoadingSpinner()
+    toogleLoadingSpinner(true)
     const getRecipes = await fetch(
       `${baseUrl}?type=public&q=${searchTerm}&app_id=${appId}&app_key=${appKey}`
     )
     const recipes = await getRecipes.json()
 
-    toogleLoadingSpinner()
+    toogleLoadingSpinner(false)
     return recipes
   } catch (error) {
     console.log(error)
@@ -48,13 +48,13 @@ export const getRecipeById = async (recipeId) => {
 
 export const getTwentyRandomRecipes = async () => {
   try {
-    toogleLoadingSpinner()
+    toogleLoadingSpinner(true)
     const getRecipe = await fetch(
       `${baseUrl}?type=public&q=q&app_id=${appId}&app_key=${appKey}`
     )
     const recipes = await getRecipe.json()
 
-    toogleLoadingSpinner()
+    toogleLoadingSpinner(false)
     return recipes
   } catch (error) {
     console.log(error)
