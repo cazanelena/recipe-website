@@ -1,8 +1,8 @@
-# Recipe finder website
+# Recipe Finder Website
 
 Project 2 - FAC28. 
 
-## Recipe Finder Website
+## Intro
 <!-- Recipe Finder Website Screenshot -->
 
 The Recipe Finder Website is a web application designed to help users search and discover a wide variety of recipes. It provides a user-friendly interface to browse through an extensive collection of recipes, search for specific dishes or ingredients.
