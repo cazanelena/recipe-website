@@ -1,14 +1,16 @@
 export const addSearchEventListener = () => {
-  const submitButton = document.getElementById("search");
+  const submitButton = document.getElementById('form-text')
 
-  submitButton.addEventListener("click", async function () {
-    let searchIngredientResult = document.getElementById("searchBar").value;
-    console.log();
-    const userInput = searchIngredientResult.toLowerCase().trim();
-    console.log(userInput);
+  submitButton.addEventListener('submit', async function (event) {
+    event.preventDefault()
 
-    document.getElementById("form-text").reset();
-    sessionStorage.setItem("searchTerm", JSON.stringify(userInput));
-    window.location.href = "./search-results.html";
-  });
-};
+    let searchIngredientResult = document.getElementById('searchBar').value
+    if (searchIngredientResult === '') return
+    const userInput = searchIngredientResult.toLowerCase().trim()
+    console.log(userInput)
+
+    document.getElementById('form-text').reset()
+    sessionStorage.setItem('searchTerm', JSON.stringify(userInput))
+    window.location.href = './search-results.html'
+  })
+}
