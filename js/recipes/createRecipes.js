@@ -8,7 +8,10 @@ const getDifficulty = (totalTime) => {
 }
 
 export const createRecipes = (image, label, healthL, url, totalTime) => {
-  const healthLableUpperCase = healthL.toUpperCase()
+  let healthLableUpperCase
+  if (healthL) {
+    healthLableUpperCase = healthL.toUpperCase()
+  }
 
   //Add a link to the btn
   const link = document.createElement('a')
