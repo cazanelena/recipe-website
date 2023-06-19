@@ -22,6 +22,8 @@ const onApiError = () => {
   loadingSpinner.style.display = 'none'
 }
 
+const randomSearches = ['chicken', 'beef', 'ham']
+
 export const getRecipes = async (searchTerm) => {
   try {
     toogleLoadingSpinner(true)
@@ -46,11 +48,30 @@ export const getRecipeById = async (recipeId) => {
   return recipes
 }
 
+const randomIngredients = [
+  'beef',
+  'fruit',
+  'chicken',
+  'rice',
+  'duck',
+  'ham',
+  'italian',
+  'french',
+  'carrot',
+  'peas',
+]
+
+const getRandomIngredient = () => {
+  const randomNum = Math.floor(Math.random() * 10)
+  return randomIngredients[randomNum]
+}
+
 export const getTwentyRandomRecipes = async () => {
   try {
     toogleLoadingSpinner(true)
+    const randomIngredient = getRandomIngredient()
     const getRecipe = await fetch(
-      `${baseUrl}?type=public&q=q&app_id=${appId}&app_key=${appKey}`
+      `${baseUrl}?type=public&q=${randomIngredient}&app_id=${appId}&app_key=${appKey}&random=true`
     )
     const recipes = await getRecipe.json()
 
